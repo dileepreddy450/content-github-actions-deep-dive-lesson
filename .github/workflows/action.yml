@@ -24,11 +24,11 @@ jobs:
         run: |
              cd function
              zip -r ../${{ github.sha }}.zip .
-      -  name: Archieve artifact
-         uses: actions/upload-artifact@v3
-         with:
-            name: zipped-bundle
-            path: ${{ github.sha }}.zip
+      # -  name: Archieve artifact
+      #    uses: actions/upload-artifact@v3
+      #    with:
+      #       name: zipped-bundle
+      #       path: ${{ github.sha }}.zip
 
 
   
